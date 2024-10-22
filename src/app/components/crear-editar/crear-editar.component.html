@@ -1,0 +1,31 @@
+<form (ngSubmit)="addMoneda()" class="form-container">
+    <div class="form-group">
+      <label for="codigo">Código</label>
+      <input id="codigo" [(ngModel)]="newMoneda.codigo" placeholder="Código" [ngModelOptions]="{standalone: true}" required />
+    </div>
+    <div class="form-group">
+      <label for="identificador">Identificador</label>
+      <input id="identificador" [(ngModel)]="newMoneda.identificador" placeholder="Identificador" [ngModelOptions]="{standalone: true}" required />
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" [(ngModel)]="newMoneda.nombre" placeholder="Nombre" [ngModelOptions]="{standalone: true}" required />
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <input id="descripcion" [(ngModel)]="newMoneda.descripcion" placeholder="Descripción" [ngModelOptions]="{standalone: true}" />
+    </div>
+    <div class="form-group">
+      <label for="activoDesde">Activo Desde</label>
+      <input id="activoDesde" type="date" [(ngModel)]="newMoneda.activoDesde" placeholder="Activo Desde" [ngModelOptions]="{standalone: true}" />
+    </div>
+    <div class="form-group">
+      <label for="activoHasta">Activo Hasta</label>
+      <input id="activoHasta" type="date" [(ngModel)]="newMoneda.activoHasta" placeholder="Activo Hasta" [ngModelOptions]="{standalone: true}" />
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input id="estado" type="checkbox" [(ngModel)]="newMoneda.estado" [ngModelOptions]="{standalone: true}" /> 
+    </div>
+    <button type="submit">{{ editingMoneda ? 'Actualizar Moneda' : 'Agregar Moneda' }}</button>
+  </form>

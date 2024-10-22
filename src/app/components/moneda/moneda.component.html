@@ -1,0 +1,30 @@
+<div>
+    <table class="centered-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Identificador</th>
+            <th>Descripción</th>
+            <th>Activo Desde</th>
+            <th>Activo Hasta</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let moneda of monedas">
+            <td>{{ moneda.nombre }}</td>
+            <td>{{ moneda.identificador }}</td>
+            <td>{{ moneda.descripcion }}</td>
+            <td>{{ moneda.activoDesde | date }}</td>
+            <td>{{ moneda.activoHasta | date }}</td>
+            <td>{{ moneda.estado ? 'Activo' : 'Inactivo' }}</td>
+            <td>
+              <button (click)="selectMoneda(moneda)">Editar</button>
+              <button class="delete" (click)="deleteMoneda(moneda.id)">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  

@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Añadido */
+  }
+
+  input[type="checkbox"]:checked {
+    accent-color: green; /* Cambia el color del checkbox cuando está seleccionado */
+  }
+
+h2 {
+    color: #003366; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007bff; /* Azul brillante */
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  }
+  
+  .centered-table {
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse; /* Mejora el aspecto */
+    width: 80%; /* Ancho de la tabla */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 2px solid #0056b3; /* Marco elegante */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.centered-table th, .centered-table td {
+    padding: 12px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    border: 1px solid #0056b3; /* Borde azul oscuro */
+}
+
+.centered-table th {
+    background-color: #004085; /* Azul oscuro para encabezados */
+    color: white; /* Texto blanco */
+}
+
+.centered-table tr:nth-child(even) {
+    background-color: #cce5ff; /* Azul claro para filas pares */
+}
+
+.centered-table tr:nth-child(odd) {
+    background-color: #e7f3ff; /* Azul muy claro para filas impares */
+}
+
+.centered-table tr:hover {
+    background-color: #b3d7ff; /* Azul suave al pasar el mouse */
+}
+  
+  button {
+    padding: 8px 12px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  }
+  
+  button:hover {
+    opacity: 0.8; /* Efecto al pasar el mouse */
+  }
+  
+  button.delete {
+    background-color: #FF4C4C; /* Rojo para el botón eliminar */
+    color: white; /* Texto blanco */
+  }
+  
+  nav {
+    background-color: #007bff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
