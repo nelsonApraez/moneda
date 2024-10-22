@@ -33,7 +33,7 @@ export class CrearEditarComponent {
         console.log(this.newMoneda);
       } 
     });
-  }
+  } 
 
   formatDate(dateString: string): string {
     const date = new Date(dateString);
