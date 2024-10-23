@@ -24,21 +24,12 @@ export class CrearEditarComponent {
       if (params['moneda']) {
         const monedaParam = params['moneda'];
         console.log(monedaParam);
-        this.newMoneda = {
-          ...monedaParam,
-          activoDesde: this.formatDate(monedaParam.activoDesde),
-          activoHasta: this.formatDate(monedaParam.activoHasta)
-        };
+        this.newMoneda = JSON.parse(monedaParam);
         this.editingMoneda = JSON.parse(monedaParam);
         console.log(this.newMoneda);
       } 
     });
   } 
-
-  formatDate(dateString: string): string {
-    const date = new Date(dateString);
-    return date.toISOString().split('T')[0]; // Formato de fecha ISO (YYYY-MM-DD)
-  }
 
   addMoneda(): void {
     this.monedaService.addMoneda(this.newMoneda).subscribe((data) => {
